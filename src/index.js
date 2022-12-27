@@ -8,7 +8,7 @@ import {
   I18nManager,
 } from 'react-native';
 
-import { ViewPropTypes } from 'deprecated-react-native-prop-types';
+import { ViewPropTypes, TextPropTypes } from 'deprecated-react-native-prop-types';
 import * as Animatable from 'react-native-animatable';
 
 const styles = StyleSheet.create({
@@ -293,8 +293,8 @@ SmoothPinCodeInput.propTypes = {
   cellStyleFocused: ViewPropTypes.style,
   cellStyleFilled: ViewPropTypes.style,
 
-  textStyle: Text.propTypes.style,
-  textStyleFocused: Text.propTypes.style,
+  textStyle: TextPropTypes,
+  textStyleFocused: TextPropTypes,
 
   animated: PropTypes.bool,
   animationFocused: PropTypes.oneOfType([
